@@ -30,7 +30,7 @@ namespace Vampire
             timeSinceLastBoomerangAttack += Time.fixedDeltaTime;
             if (distance <= monsterBlueprint.range)
             {
-                rb.velocity += dirToPlayer * monsterBlueprint.acceleration * Time.fixedDeltaTime / 2;
+                rb.linearVelocity += dirToPlayer * monsterBlueprint.acceleration * Time.fixedDeltaTime / 2;
                 if (timeSinceLastBoomerangAttack >= 1.0f/monsterBlueprint.boomerangAttackSpeed)
                 {
                     ThrowBoomerang(playerCharacter.transform.position);
@@ -39,7 +39,7 @@ namespace Vampire
             }
             else
             {
-                rb.velocity += dirToPlayer * monsterBlueprint.acceleration * Time.fixedDeltaTime;
+                rb.linearVelocity += dirToPlayer * monsterBlueprint.acceleration * Time.fixedDeltaTime;
             }
         }
 

@@ -25,7 +25,7 @@ namespace Vampire
         {
             base.FixedUpdate();
             Vector2 moveDirection = (playerCharacter.transform.position - transform.position).normalized;
-            rb.velocity += moveDirection * monsterBlueprint.acceleration * Time.fixedDeltaTime;
+            rb.linearVelocity += moveDirection * monsterBlueprint.acceleration * Time.fixedDeltaTime;
             entityManager.Grid.UpdateClient(this);
 
             // Vector2 f = Vector2.zero;

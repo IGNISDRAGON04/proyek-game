@@ -40,12 +40,12 @@ namespace Vampire
 
         public void Move(Vector2 direction, float deltaTime)
         {
-            rb.velocity += direction * monsterBlueprint.acceleration * deltaTime;
+            rb.linearVelocity += direction * monsterBlueprint.acceleration * deltaTime;
         }
 
         public void Freeze()
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
 
         private IEnumerator Act()

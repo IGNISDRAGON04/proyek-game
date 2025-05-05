@@ -37,7 +37,7 @@ namespace Vampire
                 switch (state)
                 {
                     case State.Walking:
-                        rb.velocity += dirToPlayer * monsterBlueprint.acceleration * Time.fixedDeltaTime;
+                        rb.linearVelocity += dirToPlayer * monsterBlueprint.acceleration * Time.fixedDeltaTime;
                         if (distance <= monsterBlueprint.range)
                         {
                             state = State.Shooting;
