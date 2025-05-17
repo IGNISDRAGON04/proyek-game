@@ -96,20 +96,34 @@ namespace Vampire
 
         public void Selected()
         {
+            // 1. jika karakter sudah dimiliki
+            // 2. jika ada kelas yang bernama characterblueprint
             if (!characterBlueprint.owned)
             {
+                // 1. memulai karakter dengan koin, 
                 int coinCount = PlayerPrefs.GetInt("Coins");
+                // 2. jika koin lebih dari atau sama dengan biaya karakter
                 if (coinCount >= characterBlueprint.cost)
                 {
+                    // 2.1. Karakter memulai dengan koin, dan dikurangi dengan biaya karakter
                     PlayerPrefs.SetInt("Coins", coinCount - characterBlueprint.cost);
+
+                    // 2.2. Karakter dimulai dengan atribut telah dimiliki
                     characterBlueprint.owned = true;
+
+                    // update teks tombolnya, dengan localized string berdasarkan kelas yang dibawah
                     UpdateButtonText();
+
+                    // 2.3. tombolnya diubah warna mengikuti selectColor
                     buttonImage.color = selectColor;
+
+                    // 2.4. display koin diupdate valuenya
                     coinDisplay.UpdateDisplay();
                 }
             }
             else
             {
+                // jika tidak membeli karakter baru, maka langsung start game.
                 characterSelector.StartGame(characterBlueprint);
             }
         }

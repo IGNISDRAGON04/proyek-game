@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinSprites:
     content:
-    - {fileID: 21300000, guid: 277490cc0dcfeb04babbad94c89365c6, type: 3}
+    - {fileID: 21300000, guid: 0593d8e4653c38b4f91560a7decfd0d6, type: 3}
     - {fileID: 21300000, guid: 277490cc0dcfeb04babbad94c89365c6, type: 3}
     - {fileID: 21300000, guid: 277490cc0dcfeb04babbad94c89365c6, type: 3}
     - {fileID: 21300000, guid: 277490cc0dcfeb04babbad94c89365c6, type: 3}

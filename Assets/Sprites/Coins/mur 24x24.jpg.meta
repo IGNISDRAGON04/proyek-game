@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0fd34117ef5698b44983b731d09c8fe3
+guid: 6f22ffe3378abd64d96808fb3134397b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: purpleSubmarine-0003_0
+      name: mur 24x24_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,74 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c48b324e64cecf4d8b9f29e4bf7e06d
-      internalID: -854690285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: purpleSubmarine-0003_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 47
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21794665e853ca446b68c9f815ce2ff6
-      internalID: 1627796331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: purpleSubmarine-0003_2
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 0
-        width: 49
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4a9b5827d14ab646927fcc79d55d8c9
-      internalID: -1644866558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: purpleSubmarine-0003_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0151cf0c7bfaa494c84ff5c3448da094
-      internalID: 522568207
+      spriteID: 87781f86f52ac6045ab543538e301cf7
+      internalID: -1853545650
       vertices: []
       indices: 
       edges: []
@@ -201,7 +135,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 92bef0e8c12470048b8eec7d7a423d14
+    spriteID: 43ddd1d34c3e3c94a89a871fc065ddf4
     internalID: 0
     vertices: []
     indices: 
@@ -211,10 +145,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      purpleSubmarine-0003_0: -854690285
-      purpleSubmarine-0003_1: 1627796331
-      purpleSubmarine-0003_2: -1644866558
-      purpleSubmarine-0003_3: 522568207
+      mur 24x24_0: -1853545650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

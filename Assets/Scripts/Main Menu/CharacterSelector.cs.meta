@@ -3,7 +3,9 @@ guid: 5aadb06c864d24754a27b2ab6a681c1d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - characterCardPrefab: {instanceID: 0}
+  - coinDisplay: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

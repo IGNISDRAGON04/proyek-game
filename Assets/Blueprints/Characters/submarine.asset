@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cebba9219e8740668e9101e947a97e4, type: 3}
+  m_Name: submarine
+  m_EditorClassIdentifier: 
+  name: 'Purple '
+  owned: 1
+  cost: 999
+  hp: 50
+  recovery: 0
+  armor: 0
+  movespeed: 2
+  luck: 3
+  acceleration: 50
+  walkSpriteSequence:
+  - {fileID: -854690285, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
+  - {fileID: 1627796331, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
+  - {fileID: -1644866558, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
+  - {fileID: 522568207, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
+  walkFrameTime: 0.1
+  startingAbilities: []
