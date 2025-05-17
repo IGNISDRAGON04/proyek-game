@@ -13,13 +13,66 @@ MonoBehaviour:
   m_Name: Default Local Group
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
-  m_Data:
-    m_SerializedData: []
   m_GUID: 10e1881a2f5924f35991758e91508f2a
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 02b82d77d7cdd6d45a25afc0255f1d37
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-ExtraLight.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0eb660f8f70a31942b4bec961b7663b7
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-ExtraLightItalic.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1197c49c77ca0d14dbad4d4ea91bc814
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-Italic-VariableFont_wght.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1caa8d82d04c6ba419d113c9f6744714
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-Medium.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a29599125b4215498ab19a8a1b95a3f
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-Regular.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82de922a9ee730d41a1c752a350b3be4
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-Italic.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9973178e4df827448b2c1ca81126d637
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-ExtraBold.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b69ac8b8e28a7ce4d96ecf2e8defc498
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-Light.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d76a1982972f9ac4aa910b4e2988c060
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-LightItalic.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9aefa56fc2169d45b407687c08e9e17
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-MediumItalic.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe4d0adc2c35d4841afc8770c5ac4ca9
+    m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-ExtraBoldItalic.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7e3d66dc8cb9f42809017db168ce4406, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 37dc2aeb796b642e3935734f05d4cf59, type: 2}
     - {fileID: 11400000, guid: cf5c0c75041284be4acdfa6e27364eda, type: 2}
+    - {fileID: 11400000, guid: 37dc2aeb796b642e3935734f05d4cf59, type: 2}

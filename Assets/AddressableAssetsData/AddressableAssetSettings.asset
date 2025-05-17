@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 10e1881a2f5924f35991758e91508f2a
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: 114ab2d664e2d6b759661962f9c8ce3c
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -62,6 +62,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 616dbf8d4955449479b4bab5e05c8456, type: 2}
   - {fileID: 11400000, guid: de57333a95565489290bef0ce1398d6a, type: 2}
   - {fileID: 11400000, guid: e900a7c6a692c415c93e71fcc580f887, type: 2}
+  - {fileID: 11400000, guid: c4a7d46343a335344855380246805cfe, type: 2}
   - {fileID: 11400000, guid: 2c22a599ec5d14380ab96fabe3bd42cf, type: 2}
   - {fileID: 11400000, guid: 1f9fe172d3cc44242818a8c6e373f607, type: 2}
   - {fileID: 11400000, guid: d37803cb3c6964b9e8ca41eceb69e32a, type: 2}
@@ -119,6 +120,7 @@ MonoBehaviour:
     - Preload
     - Locale-zh-Hant
     - Locale-en
+    - Locale-id-ID
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: ab9d94baca72f454199a26b77a8fc73d, type: 2}
@@ -126,10 +128,9 @@ MonoBehaviour:
   m_CertificateHandlerType:
     m_AssemblyName: 
     m_ClassName: 
-  m_ActivePlayerDataBuilderIndex: 3
+  m_ActivePlayerDataBuilderIndex: 2
   m_DataBuilders:
   - {fileID: 11400000, guid: fbf562cdd212d4542a7525a6dc2f16d2, type: 2}
-  - {fileID: 11400000, guid: 88937234849cb4bbebec23ea3c5d8ee2, type: 2}
   - {fileID: 11400000, guid: 9ea311aac93d64ea1b86119b9cdfc87a, type: 2}
   - {fileID: 11400000, guid: 7123b6dc84f47436da7e00b0941a3899, type: 2}
   m_ActiveProfileId: 8d53703acd58e4eb3a41439dd5f67d1e
