@@ -24,6 +24,8 @@ namespace Vampire
         [SerializeField] private GameObject startingAbilityContainerPrefab;
         [SerializeField] private Vector2 startingAbilitiesRectSize = new Vector2(365, 85);
         private CharacterSelector characterSelector;
+
+        // Konfigurasi blueprint karakter
         private CharacterBlueprint characterBlueprint;
         private CoinDisplay coinDisplay;
         private StartingAbilityContainer[] startingAbilityContainers;
@@ -39,6 +41,9 @@ namespace Vampire
             buyLocalization.StringChanged -= UpdateButtonText;
         }
 
+        // Inisiasi Card dari karakter sebelum dipilih
+        // UInya butuh display koin, dan selector karakter
+        // Karakter yang dipilih adalah karakter yang ada di dalam blueprint
         public void Init(CharacterSelector characterSelector, CharacterBlueprint characterBlueprint, CoinDisplay coinDisplay)
         {
             this.characterSelector = characterSelector;
@@ -50,7 +55,7 @@ namespace Vampire
             nameText.text = characterBlueprint.name.ToString();
             hpText.text = characterBlueprint.hp.ToString();
             armorText.text = characterBlueprint.armor.ToString();
-            mvspdText.text = Mathf.RoundToInt(characterBlueprint.movespeed/1.15f * 100f).ToString()+"%";
+            mvspdText.text = Mathf.RoundToInt(characterBlueprint.movespeed / 1.15f * 100f).ToString() + "%";
             luckText.text = characterBlueprint.luck.ToString();
             UpdateButtonText();
             buttonImage.color = characterBlueprint.owned ? selectColor : buyColor;

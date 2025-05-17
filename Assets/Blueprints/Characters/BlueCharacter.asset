@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cebba9219e8740668e9101e947a97e4, type: 3}
-  m_Name: submarine
+  m_Name: BlueCharacter
   m_EditorClassIdentifier: 
-  name: 'Purple '
+  name: Bambang
   owned: 1
   cost: 999
-  hp: 50
+  hp: 100
   recovery: 0
   armor: 0
   movespeed: 2
@@ -27,4 +27,5 @@ MonoBehaviour:
   - {fileID: -1644866558, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
   - {fileID: 522568207, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
   walkFrameTime: 0.1
-  startingAbilities: []
+  startingAbilities:
+  - {fileID: 7378740072262091319, guid: 710069dc0dc9445e5ae3f9ef5a764abb, type: 3}

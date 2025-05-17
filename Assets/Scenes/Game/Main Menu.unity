@@ -2477,7 +2477,7 @@ GameObject:
   - component: {fileID: 1598360476}
   - component: {fileID: 1598360477}
   m_Layer: 5
-  m_Name: "\u6309\u9215"
+  m_Name: button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2543,7 +2543,7 @@ GameObject:
   - component: {fileID: 1638893671}
   - component: {fileID: 1638893670}
   m_Layer: 5
-  m_Name: "\u80CC\u666F"
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2867,7 +2867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983711285}
   m_Layer: 5
-  m_Name: "\u9996\u9801"
+  m_Name: ' front page'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
