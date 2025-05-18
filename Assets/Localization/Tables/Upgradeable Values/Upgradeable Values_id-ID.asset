@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Upgradeable Values_id-ID
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: id-ID
+  m_SharedData: {fileID: 11400000, guid: 36c926595fec5471d984638bc6913d51, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10056884224
+    m_Localized: Serangan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216085291008
+    m_Localized: Tingkat Serangan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 737600856064
+    m_Localized: Waktu Jeda Senjata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6876853952512
+    m_Localized: Waktu Jeda Pemulihan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8603938316288
+    m_Localized: Durasi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811413757952
+    m_Localized: Area Serangan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9000874663936
+    m_Localized: Terdorong mundur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9221390196736
+    m_Localized: Kecepatan proyektil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9380824080384
+    m_Localized: Peluang Memulihkan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9701361180672
+    m_Localized: 'Serangan Perdarahan
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10005917982720
+    m_Localized: tingkat Perdarahan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10209987649536
+    m_Localized: Durasi Perdarahan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10576473350144
+    m_Localized: Kecepatan Gerak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10662871818240
+    m_Localized: Kecepatan Putaran
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10870678609920
+    m_Localized: Pelindung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11519172534272
+    m_Localized: Pemulihan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11626425081856
+    m_Localized: Jumlah Proyektil
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
