@@ -23,7 +23,9 @@ namespace Vampire
         [SerializeField] protected Material defaultMaterial, hitMaterial, deathMaterial;
         [SerializeField] protected ParticleSystem deathParticles;
         [SerializeField] protected Transform gunTransform;  // Reference to the gun transform
-        [SerializeField] private GameObject bulletPrefab; // Reference to the bullet prefab
+        [SerializeField] protected GameObject bulletPrefab;
+        [SerializeField] private float bulletSpeed = 20f; // Speed of the bullet
+        private InputAction shootAction; // Action for shooting
         protected CharacterBlueprint characterBlueprint;
         protected UpgradeableMovementSpeed movementSpeed;
         protected UpgradeableArmor armor;
@@ -45,7 +47,6 @@ namespace Vampire
         protected Coroutine hitAnimationCoroutine = null;
         protected Vector2 moveDirection;
 
-        protected InputAction shootAction;
 
 
 
@@ -72,7 +73,7 @@ namespace Vampire
         public Dictionary<int, int> ListIndexByCellIndex { get; set; }
         public int QueryID { get; set; } = -1;
 
-        
+
 
         void Awake()
         {
@@ -81,6 +82,8 @@ namespace Vampire
             spriteAnimator = GetComponentInChildren<SpriteAnimator>();
             spriteRenderer = spriteAnimator.GetComponent<SpriteRenderer>();
             characterBlueprint = CrossSceneData.CharacterBlueprint;
+            shootAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/leftButton");
+            shootAction.Enable();
         }
 
         public virtual void Init(EntityManager entityManager, AbilityManager abilityManager, StatsManager statsManager)
@@ -122,6 +125,10 @@ namespace Vampire
 
             //Function For Gun Aim
             AimAtGunCursor();
+            if (shootAction.triggered)
+            {
+                Shoot();
+            }
         }
 
         protected virtual void FixedUpdate()
@@ -301,31 +308,16 @@ namespace Vampire
             float angle = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;  // Convert to degrees
             gunTransform.rotation = Quaternion.Euler(0, 0, angle);  // Rotate the gun
         }
-        
-        // 
-        // private void OnEnable()
-        // {
-        //     shootAction.Enable();
-        //     shootAction.performed += OnShoot;
-        // }
-
-        // private void OnDisable()
-        // {
-        //     shootAction.performed -= OnShoot;
-        //     shootAction.Disable();
-        // }
-        // public void OnShoot(InputAction.CallbackContext context)
-        // {
-        //     if (context.performed)
-        //     {
-        //         void Shoot()
-        //         {
-        //             GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
-        //             Bullet bulletScript = bullet.GetComponent<Bullet>();
-        //             bulletScript.Setup(/* parameters like index, position, damage, speed, etc. */);
-        //             bulletScript.Launch(gunTransform.up); // Launch in the direction the gun is pointing
-        //         }
-        //     }
-        // }
+        public void Shoot()
+        {
+            if (!alive) return;
+            GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
+            Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
+            bulletRb.linearVelocity = gunTransform.up * bulletSpeed;
+        }
+        private void OnDestroy()
+        {
+            shootAction.Disable();
+        }
     }
 }
