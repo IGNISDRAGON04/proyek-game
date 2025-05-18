@@ -18,7 +18,7 @@
                     "name": "North Powerup",
                     "type": "Button",
                     "id": "d07f1b58-6f09-41ca-b62b-7a96becca134",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -27,7 +27,7 @@
                     "name": "East Powerup",
                     "type": "Button",
                     "id": "8de2e429-69f8-49f1-b311-bff1be221952",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -36,7 +36,7 @@
                     "name": "South Powerup",
                     "type": "Button",
                     "id": "d22d9b54-b05c-48b0-a560-d7a1c03b5105",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -45,7 +45,16 @@
                     "name": "West Powerup",
                     "type": "Button",
                     "id": "6f15bdc8-79aa-4a96-97be-44d11a41d870",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "afb63fb3-559c-491a-8142-da165e427603",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -313,6 +322,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "West Powerup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd2766b9-383e-44a6-a79d-b0f931e13852",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d7df8596-1653-46bf-856c-2416c08ed9bd",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

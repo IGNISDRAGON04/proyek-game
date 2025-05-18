@@ -22,6 +22,8 @@ namespace Vampire
         [SerializeField] protected ParticleSystem dustParticles;
         [SerializeField] protected Material defaultMaterial, hitMaterial, deathMaterial;
         [SerializeField] protected ParticleSystem deathParticles;
+        [SerializeField] protected Transform gunTransform;  // Reference to the gun transform
+        [SerializeField] private GameObject bulletPrefab; // Reference to the bullet prefab
         protected CharacterBlueprint characterBlueprint;
         protected UpgradeableMovementSpeed movementSpeed;
         protected UpgradeableArmor armor;
@@ -42,13 +44,13 @@ namespace Vampire
         protected CoroutineQueue coroutineQueue;
         protected Coroutine hitAnimationCoroutine = null;
         protected Vector2 moveDirection;
-        public Vector2 LookDirection 
-        { 
-            get { return lookDirection; } 
-            set 
+        public Vector2 LookDirection
+        {
+            get { return lookDirection; }
+            set
             {
                 if (value != Vector2.zero)
-                    lookDirection = value; 
+                    lookDirection = value;
             }
         }
         public Transform CenterTransform { get => centerTransform; }
@@ -110,6 +112,9 @@ namespace Vampire
             // Look in movement direction
             lookIndicator.transform.localPosition = lookDirection * lookIndicatorRadius;
             spriteRenderer.flipX = lookDirection.x < 0;
+
+            //Function For Gun Aim
+            AimAtGunCursor();
         }
 
         protected virtual void FixedUpdate()
@@ -228,7 +233,7 @@ namespace Vampire
             while (t < 1)
             {
                 spriteRenderer.sharedMaterial = deathMaterial;
-                deathParticles.transform.position = transform.position + Vector3.up * height * (1-t);
+                deathParticles.transform.position = transform.position + Vector3.up * height * (1 - t);
                 deathMaterial.SetFloat("_Wipe", t);
                 t += Time.deltaTime;
                 yield return null;
@@ -280,6 +285,38 @@ namespace Vampire
         public void SetMoveDirection(InputAction.CallbackContext context)
         {
             moveDirection = context.action.ReadValue<Vector2>().normalized;
+        }
+
+        private void AimAtGunCursor()
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());  // Get mouse position
+            Vector2 directionToMouse = (mousePosition - (Vector2)transform.position).normalized;  // Direction from character to mouse
+            float angle = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;  // Convert to degrees
+            gunTransform.rotation = Quaternion.Euler(0, 0, angle);  // Rotate the gun
+        }
+        private void OnEnable()
+        {
+            shootAction.Enable(); 
+            shootAction.performed += OnShoot;
+        }
+
+        private void OnDisable()
+        {
+            shootAction.performed -= OnShoot;
+            shootAction.Disable();
+        }
+        public void OnShoot(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                void Shoot()
+                {
+                    GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
+                    Bullet bulletScript = bullet.GetComponent<Bullet>();
+                    bulletScript.Setup(/* parameters like index, position, damage, speed, etc. */);
+                    bulletScript.Launch(gunTransform.up); // Launch in the direction the gun is pointing
+                }
+            }
         }
     }
 }
