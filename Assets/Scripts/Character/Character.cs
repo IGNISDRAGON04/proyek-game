@@ -44,6 +44,11 @@ namespace Vampire
         protected CoroutineQueue coroutineQueue;
         protected Coroutine hitAnimationCoroutine = null;
         protected Vector2 moveDirection;
+
+        protected InputAction shootAction;
+
+
+
         public Vector2 LookDirection
         {
             get { return lookDirection; }
@@ -66,6 +71,8 @@ namespace Vampire
         public Vector2 Size => meleeHitboxCollider.bounds.size;
         public Dictionary<int, int> ListIndexByCellIndex { get; set; }
         public int QueryID { get; set; } = -1;
+
+        
 
         void Awake()
         {
@@ -294,29 +301,31 @@ namespace Vampire
             float angle = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;  // Convert to degrees
             gunTransform.rotation = Quaternion.Euler(0, 0, angle);  // Rotate the gun
         }
-        private void OnEnable()
-        {
-            shootAction.Enable(); 
-            shootAction.performed += OnShoot;
-        }
+        
+        // 
+        // private void OnEnable()
+        // {
+        //     shootAction.Enable();
+        //     shootAction.performed += OnShoot;
+        // }
 
-        private void OnDisable()
-        {
-            shootAction.performed -= OnShoot;
-            shootAction.Disable();
-        }
-        public void OnShoot(InputAction.CallbackContext context)
-        {
-            if (context.performed)
-            {
-                void Shoot()
-                {
-                    GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
-                    Bullet bulletScript = bullet.GetComponent<Bullet>();
-                    bulletScript.Setup(/* parameters like index, position, damage, speed, etc. */);
-                    bulletScript.Launch(gunTransform.up); // Launch in the direction the gun is pointing
-                }
-            }
-        }
+        // private void OnDisable()
+        // {
+        //     shootAction.performed -= OnShoot;
+        //     shootAction.Disable();
+        // }
+        // public void OnShoot(InputAction.CallbackContext context)
+        // {
+        //     if (context.performed)
+        //     {
+        //         void Shoot()
+        //         {
+        //             GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
+        //             Bullet bulletScript = bullet.GetComponent<Bullet>();
+        //             bulletScript.Setup(/* parameters like index, position, damage, speed, etc. */);
+        //             bulletScript.Launch(gunTransform.up); // Launch in the direction the gun is pointing
+        //         }
+        //     }
+        // }
     }
 }

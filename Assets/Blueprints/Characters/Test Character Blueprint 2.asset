@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Test Character Blueprint 2
   m_EditorClassIdentifier: 
   name: Test
-  owned: 0
+  owned: 1
   cost: 799
   hp: 110
   recovery: 0
