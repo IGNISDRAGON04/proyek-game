@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cebba9219e8740668e9101e947a97e4, type: 3}
   m_Name: Main Character Blueprint
   m_EditorClassIdentifier: 
-  name: Blue
+  name: Junkies
   owned: 1
   cost: 999
   hp: 100
