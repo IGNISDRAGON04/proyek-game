@@ -24,7 +24,7 @@ namespace Vampire
         [SerializeField] protected ParticleSystem deathParticles;
         [SerializeField] protected Transform gunTransform;  // Reference to the gun transform
         [SerializeField] protected GameObject bulletPrefab;
-        [SerializeField] private float bulletSpeed = 20f; // Speed of the bullet
+        [SerializeField] private float bulletSpeed = 5f;
         private InputAction shootAction; // Action for shooting
         protected CharacterBlueprint characterBlueprint;
         protected UpgradeableMovementSpeed movementSpeed;
@@ -313,7 +313,7 @@ namespace Vampire
             if (!alive) return;
             GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-            bulletRb.linearVelocity = gunTransform.up * bulletSpeed;
+            bulletRb.linearVelocity = gunTransform.right * bulletSpeed;
         }
         private void OnDestroy()
         {
