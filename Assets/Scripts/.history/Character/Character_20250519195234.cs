@@ -46,7 +46,6 @@ namespace Vampire
         protected Coroutine hitAnimationCoroutine = null;
         protected Vector2 moveDirection;
         private float bulletSpeed = 5f;
-        private float bulletLifetime = 2f; 
 
 
 
@@ -315,7 +314,8 @@ namespace Vampire
             GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.linearVelocity = gunTransform.right * bulletSpeed;
-            
+
+            float bulletLifetime = 2f; 
             Destroy(bullet, bulletLifetime);
         }
         private void OnDestroy()

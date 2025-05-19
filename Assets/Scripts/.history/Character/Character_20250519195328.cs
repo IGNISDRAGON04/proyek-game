@@ -46,7 +46,6 @@ namespace Vampire
         protected Coroutine hitAnimationCoroutine = null;
         protected Vector2 moveDirection;
         private float bulletSpeed = 5f;
-        private float bulletLifetime = 2f; 
 
 
 
