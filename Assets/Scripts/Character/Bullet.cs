@@ -4,9 +4,10 @@ namespace Vampire
 {
     public class Bullet : MonoBehaviour
     {
+        //[SerializedField] private float BulletDamage = 2f;
         public float bulletSpeed = 10f;
         public float lifetime = 2f;
-
+        //private float damage;
         private void Start()
         {
             Destroy(gameObject, lifetime);
@@ -19,6 +20,11 @@ namespace Vampire
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            //DamageBullet DamageBullet = collision.gameObject.GetComponent<DamageBullet>();
+            //if (DamageBullet != null)
+            //{
+            //    DamageBullet.Damage(damage)
+            //}
             Destroy(gameObject);
         }
     }
