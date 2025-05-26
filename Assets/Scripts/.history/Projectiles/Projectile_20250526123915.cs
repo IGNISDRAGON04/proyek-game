@@ -9,7 +9,7 @@ namespace Vampire
         [SerializeField] protected SpriteRenderer projectileSpriteRenderer;
         [SerializeField] protected float maxDistance;
         [SerializeField] protected float rotationSpeed = 20;
-        [SerializeField] protected float airResistance = 50;
+        [SerializeField] protected float airResistance = 50
         [SerializeField] protected ParticleSystem destructionParticleSystem;
         protected float despawnTime = 1;  // How long before this will be despawned once it has left the screen
         protected LayerMask targetLayer;

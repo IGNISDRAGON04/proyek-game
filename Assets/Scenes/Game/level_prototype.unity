@@ -19679,7 +19679,6 @@ MonoBehaviour:
   deathParticles: {fileID: 540212426}
   gunTransform: {fileID: 323368543}
   bulletPrefab: {fileID: 8318115936189646783, guid: ca00a9132ba2da243bab38c64ed04902, type: 3}
-  bulletSpeed: 5
 --- !u!58 &1622731760
 CircleCollider2D:
   m_ObjectHideFlags: 0
