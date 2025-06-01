@@ -37,14 +37,14 @@ MonoBehaviour:
       dropChance: 0.01
       coinType: 0
   walkSpriteSequence:
-  - {fileID: -961571408, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
-  - {fileID: 1807613976, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
-  - {fileID: 627140091, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
-  - {fileID: 1176005240, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
-  - {fileID: -57313129, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
-  - {fileID: 817197191, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
-  - {fileID: -372294499, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
-  - {fileID: 698382718, guid: 270adcc6be3124e45a48c8c0cb8e1e9e, type: 3}
+  - {fileID: 754802083, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
+  - {fileID: -1619758800, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
+  - {fileID: 641912102, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
+  - {fileID: 6354855, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
+  - {fileID: 1325824314, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
+  - {fileID: 1288203994, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
+  - {fileID: 1029562845, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
+  - {fileID: 2074800842, guid: ca77a5449c7a9ee489bd5946373c1e3c, type: 3}
   walkFrameTime: 0.3
   meleeLayer:
     serializedVersion: 2

@@ -22,10 +22,10 @@ MonoBehaviour:
   luck: 1
   acceleration: 50
   walkSpriteSequence:
-  - {fileID: 567569024, guid: 06d13f50c05e63049bdb8ac8ceda5b69, type: 3}
-  - {fileID: -302665113, guid: 06d13f50c05e63049bdb8ac8ceda5b69, type: 3}
-  - {fileID: 1886548958, guid: 06d13f50c05e63049bdb8ac8ceda5b69, type: 3}
-  - {fileID: 1501282228, guid: 06d13f50c05e63049bdb8ac8ceda5b69, type: 3}
+  - {fileID: -854690285, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
+  - {fileID: 1627796331, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
+  - {fileID: -1644866558, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
+  - {fileID: 522568207, guid: 0fd34117ef5698b44983b731d09c8fe3, type: 3}
   walkFrameTime: 0.1
   startingAbilities:
   - {fileID: 7378740072262091319, guid: 6bf0c7ded38f2427f8fbf34693543d88, type: 3}
