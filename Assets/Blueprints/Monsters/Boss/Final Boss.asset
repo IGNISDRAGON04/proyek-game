@@ -31,10 +31,10 @@ MonoBehaviour:
       dropChance: 1
       coinType: 0
   walkSpriteSequence:
-  - {fileID: 941236917, guid: a1934d8b81b1b463789e100d3936db4f, type: 3}
-  - {fileID: 1685016755, guid: a1934d8b81b1b463789e100d3936db4f, type: 3}
-  - {fileID: -1451960610, guid: a1934d8b81b1b463789e100d3936db4f, type: 3}
-  - {fileID: -1697577783, guid: a1934d8b81b1b463789e100d3936db4f, type: 3}
+  - {fileID: 1705098704, guid: 084091c0650c1fd43924cf08de62558a, type: 3}
+  - {fileID: 1797341616, guid: 084091c0650c1fd43924cf08de62558a, type: 3}
+  - {fileID: -1221565394, guid: 084091c0650c1fd43924cf08de62558a, type: 3}
+  - {fileID: 1496633432, guid: 084091c0650c1fd43924cf08de62558a, type: 3}
   walkFrameTime: 0.2
   abilityPrefabs:
   - {fileID: 7744714996288908991, guid: 3440285163500438fba0dba88b03a6ee, type: 3}

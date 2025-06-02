@@ -41,7 +41,7 @@ namespace Vampire
         [SerializeField] private Vector2Int gridDimensions;
         [Header("Dependencies")]
         [SerializeField] private SpriteRenderer flashSpriteRenderer;
-        [SerializeField] private Camera playerCamera;  
+        [SerializeField] private Camera playerCamera;  // 攝像頭
         private Character playerCharacter;  
         private StatsManager statsManager;
         private Inventory inventory;

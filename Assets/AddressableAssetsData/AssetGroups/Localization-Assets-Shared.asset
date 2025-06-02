@@ -15,13 +15,6 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: ebca7a2b467c14cc18bed67824e51565
   m_SerializeEntries:
-  - m_GUID: 0e5f8d21122b64a7a8459a1c61b9b9d8
-    m_Address: NotoSansMonoCJKtc-Regular SDF
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh
-    - Locale-zh-Hant
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 36c926595fec5471d984638bc6913d51
     m_Address: Assets/Localization/Tables/Upgradeable Values/Upgradeable Values Shared
       Data.asset
@@ -42,6 +35,14 @@ MonoBehaviour:
     m_Address: Assets/Localization/Tables/Ability Text/Ability Table Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f586378b4e144a9851e7b34d9b748ee
+    m_Address: LiberationSans SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-zh
+    - Locale-zh-Hant
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b33cf4ad3225b41c9b095285edde9353
     m_Address: Assets/Localization/Tables/Character Text/Character Shared Data.asset

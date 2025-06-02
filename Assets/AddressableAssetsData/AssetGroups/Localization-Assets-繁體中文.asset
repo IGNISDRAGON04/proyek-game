@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-Assets-English
+  m_Name: "Localization-Assets-\u7E41\u9AD4\u4E2D\u6587"
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-Assets-English
-  m_GUID: 3504a6491d86b40b1bc92fb87a1c77ca
+  m_GroupName: "Localization-Assets-\u7E41\u9AD4\u4E2D\u6587"
+  m_GUID: 12c11e6923d418c418328a4ab2667674
   m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7e3d66dc8cb9f42809017db168ce4406, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 52a3a0d48f94045db9ce81115b9e6ce2, type: 2}
-    - {fileID: 11400000, guid: f0ec8f2c850c84376b11ac104e9a13bd, type: 2}
+    - {fileID: 11400000, guid: fa43fd535564f0349b2d99a03d403608, type: 2}
+    - {fileID: 11400000, guid: 3533ed80ef1117e4b9e0ec16119b88b8, type: 2}
