@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class PersistentAudio : MonoBehaviour
 {
     private static PersistentAudio instance = null;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     void Awake()
     {
