@@ -41,6 +41,7 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
+    - Locale-id-ID
     - Locale-zh
     - Locale-zh-Hant
     FlaggedDuringContentUpdateRestriction: 0
