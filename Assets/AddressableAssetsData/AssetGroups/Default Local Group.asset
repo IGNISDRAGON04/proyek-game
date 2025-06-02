@@ -30,6 +30,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 138b085873865480984b6ebcd8312fae
+    m_Address: Assets/Blueprints/Characters/Character_BP_Junkies.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1caa8d82d04c6ba419d113c9f6744714
     m_Address: Assets/TextMesh Pro/Examples & Extras/Fonts/Nunito-Medium.ttf
     m_ReadOnly: 0

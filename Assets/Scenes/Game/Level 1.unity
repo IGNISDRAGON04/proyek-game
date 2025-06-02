@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 23237562}
   - component: {fileID: 23237563}
   m_Layer: 5
-  m_Name: "\u7D93\u9A57\u689D"
+  m_Name: Experience bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,6 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2427453dea7a16f448318ea6add09966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
 --- !u!82 &137572404
 AudioSource:
   m_ObjectHideFlags: 0
@@ -915,7 +916,7 @@ GameObject:
   - component: {fileID: 197700466}
   - component: {fileID: 197700465}
   m_Layer: 5
-  m_Name: "\u91D1\u5E63\u91CF"
+  m_Name: Amount of gold coins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1991,8 +1992,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -12}
-  m_SizeDelta: {x: -24, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -735.0547, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &697763938
 GameObject:
@@ -2183,7 +2184,7 @@ GameObject:
   - component: {fileID: 712880786}
   - component: {fileID: 712880785}
   m_Layer: 5
-  m_Name: "\u756B\u9762"
+  m_Name: picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2221,7 +2222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.812589, b: 0, a: 1}
+  m_Color: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3026,6 +3027,8 @@ MonoBehaviour:
   deathParticles: {fileID: 869581549}
   gunTransform: {fileID: 1871482116}
   bulletPrefab: {fileID: 7669521032070789568, guid: 44cbd95374e4b57498df777c5187e409, type: 3}
+  movementAudioSource: {fileID: 0}
+  footStepAudioClip: {fileID: 0}
 --- !u!61 &856782962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8050,7 +8053,7 @@ GameObject:
   - component: {fileID: 904564446}
   - component: {fileID: 904564447}
   m_Layer: 5
-  m_Name: "\u8840\u91CF\u689D"
+  m_Name: Health bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8866,6 +8869,10 @@ MonoBehaviour:
   animationSpeed: 5
   previousDialog: {fileID: 0}
   nextDialog: {fileID: 0}
+  audioSource: {fileID: 0}
+  openSoundEffect: {fileID: 0}
+  closeSoundEffect: {fileID: 0}
+  navigateSoundEffect: {fileID: 0}
   abilityCardsParent: {fileID: 2124109318}
   abilityCardPrefab: {fileID: 5629613628450112857, guid: 688559ce033df48cbb7d76a6941bfe37, type: 3}
   pauseMenu: {fileID: 499037435}
@@ -14597,7 +14604,7 @@ GameObject:
   - component: {fileID: 1665719938}
   - component: {fileID: 1665719937}
   m_Layer: 5
-  m_Name: "\u80CC\u666F"
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19550,7 +19557,7 @@ GameObject:
   - component: {fileID: 1736393775}
   - component: {fileID: 1736393774}
   m_Layer: 5
-  m_Name: "\u524D\u666F"
+  m_Name: prospect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19625,7 +19632,7 @@ GameObject:
   - component: {fileID: 1747308522}
   - component: {fileID: 1747308521}
   m_Layer: 5
-  m_Name: "Level\u6587\u672C"
+  m_Name: Level text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19984,7 +19991,7 @@ GameObject:
   - component: {fileID: 1854457389}
   - component: {fileID: 1854457388}
   m_Layer: 5
-  m_Name: "\u80CC\u666F"
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20329,7 +20336,7 @@ GameObject:
   - component: {fileID: 1910652788}
   - component: {fileID: 1910652787}
   m_Layer: 5
-  m_Name: "\u756B\u9762"
+  m_Name: picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20510,7 +20517,7 @@ GameObject:
   - component: {fileID: 2001856715}
   - component: {fileID: 2001856714}
   m_Layer: 5
-  m_Name: "\u602A\u7269\u5DF2\u64CA\u6BBA\u6578\u91CF"
+  m_Name: Number of monsters killed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21028,6 +21035,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 928073265}
     m_Modifications:
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 49670d524d48ee74fb51ab7ab54f95ff, type: 2}
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6412471696279937438, guid: 49670d524d48ee74fb51ab7ab54f95ff, type: 2}
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086026183823869567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 2086026184276032837, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -21048,6 +21087,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1764401684}
+    - target: {fileID: 2086026184593480263, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_Name
+      value: Return to home page
+      objectReference: {fileID: 0}
     - target: {fileID: 2086026185243676660, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -21172,6 +21215,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -278.33752
       objectReference: {fileID: 0}
+    - target: {fileID: 2086026185548916569, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2086026185628323477, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -21192,6 +21239,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1764401684}
+    - target: {fileID: 2086026185702946903, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_Name
+      value: challenge again
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

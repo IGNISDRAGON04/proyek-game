@@ -7,7 +7,9 @@ namespace Vampire
     public class LevelBlueprint : ScriptableObject
     {
         [Header("Time")]
-        public float levelTime = 600;
+        // in seconds
+        [Tooltip("The total time for the level in seconds.")]
+        public float levelTime = 600; 
         [Header("Background")]
         public Texture2D backgroundTexture;
         [Header("Abilities")]

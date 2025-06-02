@@ -48,6 +48,11 @@ namespace Vampire
         private float bulletSpeed = 5f;
         private float bulletLifetime = 2f; 
 
+        [Header("Audio Setup")]
+        [SerializeField] private AudioSource movementAudioSource;
+        [SerializeField] private AudioClip footStepAudioClip;
+        private bool isFootstepSoundPlaying = false;
+
 
 
 
@@ -85,6 +90,16 @@ namespace Vampire
             characterBlueprint = CrossSceneData.CharacterBlueprint;
             shootAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/leftButton");
             shootAction.Enable();
+
+            // Footstep sound setup
+            if (movementAudioSource == null)
+            {
+                movementAudioSource = gameObject.AddComponent<AudioSource>();
+                if (movementAudioSource == null)
+                {
+                    Debug.LogError("Movement Audio Source is not assigned and could not be created.");
+                }
+            }
         }
 
         public virtual void Init(EntityManager entityManager, AbilityManager abilityManager, StatsManager statsManager)
@@ -295,11 +310,47 @@ namespace Vampire
         {
             spriteAnimator.StopAnimating(true);
             //dustParticles.Stop();
+
+            // new feature : audio safe guard to stop footstep sound when not moving
+            if (isFootstepSoundPlaying && movementAudioSource != null && movementAudioSource.isPlaying)
+            {
+                movementAudioSource.Stop();
+                isFootstepSoundPlaying = false;
+                Debug.Log("Footstep sound stopped playing due to stop walk animation.");
+            }
         }
 
+        // update move adding footstep sound
         public void SetMoveDirection(InputAction.CallbackContext context)
-        {
-            moveDirection = context.action.ReadValue<Vector2>().normalized;
+        {   
+            Vector2 receivedMoveInput = context.action.ReadValue<Vector2>().normalized;
+
+            if (receivedMoveInput !=  Vector2.zero && !isFootstepSoundPlaying)
+            { 
+                if (movementAudioSource != null && footStepAudioClip != null)
+                {
+                    movementAudioSource.clip = footStepAudioClip;
+                    movementAudioSource.loop = true;
+                    movementAudioSource.Play();
+                    isFootstepSoundPlaying = true;
+                }
+
+                Debug.Log("Footstep sound started playing.");
+            }
+            else if (receivedMoveInput == Vector2.zero && isFootstepSoundPlaying)
+            {
+                if (movementAudioSource != null && movementAudioSource.isPlaying)
+                {
+                    movementAudioSource.Stop();
+                }
+                isFootstepSoundPlaying = false;
+
+                Debug.Log("Footstep sound stopped playing.");
+            }
+
+            moveDirection = receivedMoveInput;
+            // Uncomment the line below if want the previous behavior
+            // moveDirection = context.action.ReadValue<Vector2>().normalized;
         }
 
         private void AimAtGunCursor()
