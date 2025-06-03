@@ -5,6 +5,8 @@ public class PersistentAudio : MonoBehaviour
 {
     private static PersistentAudio instance = null;
     public AudioSource audioSource;
+    // checkbox to play music on awake
+    [SerializeField] private bool playOnStart = false;
 
     void Awake()
     {

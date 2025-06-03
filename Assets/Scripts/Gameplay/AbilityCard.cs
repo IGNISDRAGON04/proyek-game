@@ -35,6 +35,7 @@ namespace Vampire
             SetText();
         }
 
+        // upgrade text when user already have skill and wants to upgrade it to display the level upgrades
         private void SetText()
         {
             if (!initialized) return;

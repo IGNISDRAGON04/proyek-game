@@ -31,11 +31,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 142525587456
-    m_Localized: Starting Abilities
+    m_Localized: Ability
     m_Metadata:
       m_Items: []
   - m_Id: 8946122219520
-    m_Localized: Luck
+    m_Localized: Crit
     m_Metadata:
       m_Items: []
   - m_Id: 279166384594944

@@ -20,7 +20,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 68219297792
-    m_Key: Movement Speed
+    m_Key: Mspd
     m_Metadata:
       m_Items: []
   - m_Id: 123168874496
@@ -28,11 +28,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 142525587456
-    m_Key: Starting Abilities
+    m_Key: Ability
     m_Metadata:
       m_Items: []
   - m_Id: 8946122219520
-    m_Key: Luck
+    m_Key: Crit
     m_Metadata:
       m_Items: []
   - m_Id: 279166384594944

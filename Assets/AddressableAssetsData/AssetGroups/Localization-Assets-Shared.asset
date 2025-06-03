@@ -26,6 +26,15 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49670d524d48ee74fb51ab7ab54f95ff
+    m_Address: PressStart2P-Regular SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-id-ID
+    - Locale-zh
+    - Locale-zh-Hant
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6def7e6a8fc31461fb80c6136fc1a913
     m_Address: Assets/Localization/Tables/Game Text/Game Text Shared Data.asset
     m_ReadOnly: 1
@@ -35,15 +44,6 @@ MonoBehaviour:
     m_Address: Assets/Localization/Tables/Ability Text/Ability Table Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8f586378b4e144a9851e7b34d9b748ee
-    m_Address: LiberationSans SDF
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-id-ID
-    - Locale-zh
-    - Locale-zh-Hant
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b33cf4ad3225b41c9b095285edde9353
     m_Address: Assets/Localization/Tables/Character Text/Character Shared Data.asset
