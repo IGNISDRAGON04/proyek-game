@@ -3,7 +3,24 @@ guid: 41c6426ee23684b4694c5c60558c97a7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - centerTransform: {instanceID: 0}
+  - lookIndicator: {instanceID: 0}
+  - levelText: {instanceID: 0}
+  - abilitySelectionDialog: {instanceID: 0}
+  - healthBar: {instanceID: 0}
+  - expBar: {instanceID: 0}
+  - collectableCollider: {instanceID: 0}
+  - meleeHitboxCollider: {instanceID: 0}
+  - dustParticles: {instanceID: 0}
+  - defaultMaterial: {instanceID: 0}
+  - hitMaterial: {instanceID: 0}
+  - deathMaterial: {instanceID: 0}
+  - deathParticles: {instanceID: 0}
+  - gunTransform: {instanceID: 0}
+  - bulletPrefab: {instanceID: 0}
+  - movementAudioSource: {instanceID: 0}
+  - footStepAudioClip: {fileID: 8300000, guid: 8e0f7d5b2e566b14d81fa079390d2630, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

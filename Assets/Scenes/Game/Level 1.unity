@@ -3028,8 +3028,8 @@ MonoBehaviour:
   deathParticles: {fileID: 869581549}
   gunTransform: {fileID: 1871482116}
   bulletPrefab: {fileID: 7669521032070789568, guid: 44cbd95374e4b57498df777c5187e409, type: 3}
-  movementAudioSource: {fileID: 0}
-  footStepAudioClip: {fileID: 0}
+  movementAudioSource: {fileID: 1421529454}
+  footStepAudioClip: {fileID: 8300000, guid: 8e0f7d5b2e566b14d81fa079390d2630, type: 3}
 --- !u!61 &856782962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21172,6 +21172,26 @@ PrefabInstance:
       propertyPath: m_ActiveFontFeatures.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2086026184335842799, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086026184335842803, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086026184335842803, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: levelLostClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b59ba1a559df3844a9246b95fc127cdf, type: 3}
+    - target: {fileID: 2086026184335842803, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: levelPassedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c2fba857994bb7e4292111975391a86d, type: 3}
+    - target: {fileID: 2086026184335842803, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
+      propertyPath: gameOverAudioSource
+      value: 
+      objectReference: {fileID: 1421529454}
     - target: {fileID: 2086026184525204076, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_fontColor.b
       value: 0.9803922

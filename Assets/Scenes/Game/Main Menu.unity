@@ -2551,7 +2551,7 @@ PrefabInstance:
     - target: {fileID: 2391678180519886385, guid: a40f5fc193e064471aec9d5d24f92174, type: 3}
       propertyPath: openSoundEffect
       value: 
-      objectReference: {fileID: 8300000, guid: 8e0f7d5b2e566b14d81fa079390d2630, type: 3}
+      objectReference: {fileID: 8300000, guid: fef3cacce86fb174d876fab9e315a6b4, type: 3}
     - target: {fileID: 2391678180519886385, guid: a40f5fc193e064471aec9d5d24f92174, type: 3}
       propertyPath: closeSoundEffect
       value: 
@@ -2830,6 +2830,10 @@ PrefabInstance:
     - target: {fileID: 4785135395341393465, guid: 719d2a3e9222c41098418ff013c647ab, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785135395887651808, guid: 719d2a3e9222c41098418ff013c647ab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -27.5
       objectReference: {fileID: 0}
     - target: {fileID: 4785135395887651811, guid: 719d2a3e9222c41098418ff013c647ab, type: 3}
       propertyPath: m_RaycastTarget
