@@ -21090,7 +21090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2086026184078793567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_fontSize
-      value: 0
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 2086026184078793567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_fontAsset
@@ -21118,7 +21118,7 @@ PrefabInstance:
       objectReference: {fileID: -6412471696279937438, guid: 49670d524d48ee74fb51ab7ab54f95ff, type: 2}
     - target: {fileID: 2086026184078793567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2086026184078793567, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -21150,7 +21150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2086026184312181820, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_fontSize
-      value: 0
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 2086026184312181820, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_fontAsset
@@ -21162,7 +21162,7 @@ PrefabInstance:
       objectReference: {fileID: -6412471696279937438, guid: 49670d524d48ee74fb51ab7ab54f95ff, type: 2}
     - target: {fileID: 2086026184312181820, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2086026184312181820, guid: 703ea41888e974ca7a945bd5a4b250cf, type: 3}
       propertyPath: m_hasFontAssetChanged
