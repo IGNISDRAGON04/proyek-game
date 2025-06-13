@@ -1436,7 +1436,7 @@ MonoBehaviour:
   characterCardPrefab: {fileID: 979783560240380161, guid: 886cc4577ecba4fc6af0c792a1e21501, type: 3}
   coinDisplay: {fileID: 667823177}
   audioSource: {fileID: 438191656155057048}
-  selectSoundEffect: {fileID: 8300000, guid: 8e0f7d5b2e566b14d81fa079390d2630, type: 3}
+  selectSoundEffect: {fileID: 8300000, guid: 0641b95a2a839664b988a08134cc9970, type: 3}
 --- !u!1 &870851703
 GameObject:
   m_ObjectHideFlags: 0
