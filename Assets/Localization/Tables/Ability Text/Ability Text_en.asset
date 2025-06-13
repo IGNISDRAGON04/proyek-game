@@ -27,19 +27,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 702691663872
-    m_Localized: Lightsword
+    m_Localized: Seahorse
     m_Metadata:
       m_Items: []
   - m_Id: 847437094912
-    m_Localized: Boomerang attack
+    m_Localized: Seahorse Attack
     m_Metadata:
       m_Items: []
   - m_Id: 1050382688256
-    m_Localized: Machete
+    m_Localized: Fang
     m_Metadata:
       m_Items: []
   - m_Id: 1150563639296
-    m_Localized: Boomerang attack
+    m_Localized: 'Fang Attack '
     m_Metadata:
       m_Items: []
   - m_Id: 1425428963328
@@ -59,7 +59,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3436413181952
-    m_Localized: Bat
+    m_Localized: Pipe
     m_Metadata:
       m_Items: []
   - m_Id: 3524413874176
@@ -67,7 +67,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4023905148928
-    m_Localized: Dagger
+    m_Localized: Crystal Shard
     m_Metadata:
       m_Items: []
   - m_Id: 4033036148736
@@ -75,7 +75,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4334879236096
-    m_Localized: Sword
+    m_Localized: Swordfish
     m_Metadata:
       m_Items: []
   - m_Id: 4351253798912
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4967288004608
-    m_Localized: Bazooka
+    m_Localized: Whale
     m_Metadata:
       m_Items: []
   - m_Id: 4999026302976
@@ -91,7 +91,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5393987133440
-    m_Localized: AK-47
+    m_Localized: Jellyfish
     m_Metadata:
       m_Items: []
   - m_Id: 5398001082368
@@ -103,11 +103,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6587841241088
-    m_Localized: Shuriken
+    m_Localized: Starfish
     m_Metadata:
       m_Items: []
   - m_Id: 7050871431168
-    m_Localized: Axe
+    m_Localized: Pufferfish
     m_Metadata:
       m_Items: []
   - m_Id: 7053991993344
@@ -123,7 +123,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7910674391040
-    m_Localized: Molotov
+    m_Localized: Bottle of poison
     m_Metadata:
       m_Items: []
   - m_Id: 7923844505600

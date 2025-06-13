@@ -27,7 +27,79 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 702691663872
-    m_Localized: Pedang Cahaya
+    m_Localized: Kuda Laut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847437094912
+    m_Localized: 'Serangan Kuda Laut '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1050382688256
+    m_Localized: Taring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1150563639296
+    m_Localized: Serangan Taring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1425428963328
+    m_Localized: Hisap Nyawa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1544433950720
+    m_Localized: Peluang untuk memulihkan HP saat memberikan serangan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2330958225408
+    m_Localized: Pemulihan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2346053525504
+    m_Localized: Memulihkan HP seiring waktu.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3436413181952
+    m_Localized: pipa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3524413874176
+    m_Localized: Serangan jarak dekat yang mementalkan musuh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4023905148928
+    m_Localized: Pecahan Kristal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4033036148736
+    m_Localized: Serangan jarak dekat dengan efek luka berdarah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4334879236096
+    m_Localized: Ikan Pedang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4967288004608
+    m_Localized: Paus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5393987133440
+    m_Localized: Ubur-Ubur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6587841241088
+    m_Localized: Bintang Laut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7050871431168
+    m_Localized: Ikan Buntal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7868966232064
+    m_Localized: Granat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7910674391040
+    m_Localized: Botol racun
     m_Metadata:
       m_Items: []
   references:
