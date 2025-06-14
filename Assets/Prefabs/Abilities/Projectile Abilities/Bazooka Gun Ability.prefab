@@ -4949,9 +4949,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ee5c447ff692045cc9be46862f1e0d2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94276073c7ab2304097d8e783aaab764, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.7083333, y: 0.27083334}
@@ -5039,7 +5039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7228610ab313b4c21827bd34777d1680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 802e66831ddcd1f40b343047221832ae, type: 3}
+  image: {fileID: 21300000, guid: 94276073c7ab2304097d8e783aaab764, type: 3}
   localizedName:
     m_TableReference:
       m_TableCollectionName: GUID:7293f9ffd63774eb1b5120a3e14cb7f5

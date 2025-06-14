@@ -102,6 +102,102 @@ MonoBehaviour:
     m_Localized: Botol racun
     m_Metadata:
       m_Items: []
+  - m_Id: 4351253798912
+    m_Localized: Hanya menyerang ke kiri dan kanan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4999026302976
+    m_Localized: Serangan dari jauh dengan efek area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5398001082368
+    m_Localized: Serangan beruntun berdamage kecil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6604362604544
+    m_Localized: Lemparan cepat beruntun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7053991993344
+    m_Localized: Berputar di sekitar pemain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7889975500800
+    m_Localized: Ledakan menyebar ke seluruh arah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7923844505600
+    m_Localized: Menghasilkan area racun di tanah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11456790650880
+    m_Localized: AOE+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11462826254336
+    m_Localized: Area serangan diperbesar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17051954438144
+    m_Localized: Pelindung+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17059760037888
+    m_Localized: Pengurangan damage tetap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27185514536960
+    m_Localized: Cooldown+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27191411728384
+    m_Localized: Cooldown serangan dipersingkat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28001675763712
+    m_Localized: Serangan+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28005144453120
+    m_Localized: Meningkatkan kekuatan serangan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28807695163392
+    m_Localized: Kecepatan+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28814192140288
+    m_Localized: Meningkatkan kecepatan bergerak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29846494240768
+    m_Localized: Knockback+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29946226401280
+    m_Localized: Knockback meningkat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30472754159616
+    m_Localized: Proyektil+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30477896376320
+    m_Localized: Jumlah peluru/proyektil bertambah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30488721874944
+    m_Localized: Kecepatan Proyektil+
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30492345753600
+    m_Localized: Laju proyektil meningkat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64544616472576
+    m_Localized: Meningkat
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

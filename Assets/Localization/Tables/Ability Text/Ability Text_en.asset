@@ -127,7 +127,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7923844505600
-    m_Localized: Creates pools of fire on the ground
+    m_Localized: Creates pools of poison on the ground
     m_Metadata:
       m_Items: []
   - m_Id: 11456790650880
