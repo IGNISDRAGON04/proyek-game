@@ -344,6 +344,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fc095b404b43b4a9110f231a3a9dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textComponent: {fileID: 173644110}
+  lines:
+  - 'halo gais
+
+'
+  - 'disini kita coba
+
+'
+  textSpeed: 0.04
 --- !u!1 &774940825
 GameObject:
   m_ObjectHideFlags: 0

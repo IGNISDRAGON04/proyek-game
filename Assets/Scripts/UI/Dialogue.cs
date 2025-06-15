@@ -1,40 +1,62 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-namespace Vampire
+using UnityEngine;
+
+public class Dialogue : MonoBehaviour
 {
-    public class Dialogue : MonoBehaviour
+    [SerializeField] private TextMeshProUGUI textComponent;
+    [SerializeField] [TextArea(3,10)] private string[] lines;
+    [SerializeField] private float textSpeed = 0.04f;
+
+    private int index;
+
+    void Start()
     {
-        public TextMeshProGUI textComponent;
-        public string[] lines;
-        public float textSpeed;
-        private int index;
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        textComponent.text = string.Empty;
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
         {
-            textComponent.text = string.Empty;
-            StartDialogue();
+            if (textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
         }
+    }
 
-        // Update is called once per frame
-        void Update()
+    public void StartDialogue()
+    {
+        index = 0;
+        StartCoroutine(TypeLine());
+    }
+
+    IEnumerator TypeLine()
+    {
+        textComponent.text = string.Empty;
+        foreach (char c in lines[index].ToCharArray())
         {
-
+            textComponent.text += c;
+            yield return new WaitForSeconds(textSpeed);
         }
+    }
 
-        void StartDialogue()
+    void NextLine()
+    {
+        if (index < lines.Length - 1)
         {
-            index = 0;
+            index++;
             StartCoroutine(TypeLine());
         }
-        IEnumerator TypeLine()
+        else
         {
-            foreach (char c in lines[index].ToCharArray())
-            {
-                textComponent.text += C;
-                yield return new WaitForSeconds(textSpeed);
-            }
+            textComponent.text = string.Empty;
         }
     }
 }
