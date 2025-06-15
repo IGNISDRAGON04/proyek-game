@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cebba9219e8740668e9101e947a97e4, type: 3}
+  m_Name: Character_BP_Iron
+  m_EditorClassIdentifier: 
+  name: Iron
+  owned: 1
+  cost: 999
+  hp: 450
+  recovery: 10
+  armor: 20
+  movespeed: 30
+  luck: 50
+  acceleration: 10
+  walkSpriteSequence:
+  - {fileID: -1004033229, guid: c742bc69c46e37343a3da53fa5e33569, type: 3}
+  - {fileID: -1950494596, guid: c742bc69c46e37343a3da53fa5e33569, type: 3}
+  - {fileID: 986192157, guid: c742bc69c46e37343a3da53fa5e33569, type: 3}
+  - {fileID: 1596003598, guid: c742bc69c46e37343a3da53fa5e33569, type: 3}
+  walkFrameTime: 0
+  startingAbilities:
+  - {fileID: 7378740072262091319, guid: 83d30b9611c244f46b7a4bfc51d0276c, type: 3}
+  - {fileID: 7378740072262091319, guid: 48e31f1d1283b43748c060fbc24e3df8, type: 3}
+  - {fileID: 7378740072262091319, guid: 6bf0c7ded38f2427f8fbf34693543d88, type: 3}
