@@ -32,8 +32,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Locale-id-ID
-    - Locale-zh
-    - Locale-zh-Hant
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6def7e6a8fc31461fb80c6136fc1a913
     m_Address: Assets/Localization/Tables/Game Text/Game Text Shared Data.asset
