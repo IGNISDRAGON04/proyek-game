@@ -27,11 +27,11 @@ public class PersistentAudio : MonoBehaviour
                 audioSource = gameObject.AddComponent<AudioSource>();
             }
 
-            You can optionally start playing the music here if "Play On Awake" wasn't checked
-            if (!audioSource.isPlaying && audioSource.clip != null)
-            {
-                audioSource.Play();
-            }
+            // You can optionally start playing the music here if "Play On Awake" wasn't checked
+            // if (!audioSource.isPlaying && audioSource.clip != null)
+            // {
+            //     audioSource.Play();
+            // }
         }
         else if (instance != this)
         {

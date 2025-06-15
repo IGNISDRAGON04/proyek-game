@@ -21,10 +21,12 @@ namespace Vampire
             mousePosition.z = 0; // Set z to 0 since we're working in 2D
 
             // Calculate the direction from the machine gun to the mouse position
-            gunDirection = (mousePosition - machineGun.transform.position).normalized;
+            gunDirection = (mousePosition - playerCharacter.CenterTransform.position).normalized;
 
             // Update the gun's position and rotation
             machineGun.transform.position = playerCharacter.CenterTransform.position + gunDirection * gunRadius;
+
+            // Calculate the angle for rotation
             float angle = Mathf.Atan2(gunDirection.y, gunDirection.x) * Mathf.Rad2Deg;
             machineGun.transform.rotation = Quaternion.Euler(0, 0, angle);
 
