@@ -45,8 +45,8 @@ namespace Vampire
         protected CoroutineQueue coroutineQueue;
         protected Coroutine hitAnimationCoroutine = null;
         protected Vector2 moveDirection;
-        private float bulletSpeed = 5f;
-        private float bulletLifetime = 2f; 
+        // private float bulletSpeed = 5f;
+        // private float bulletLifetime = 2f; 
 
         [Header("Audio Setup")]
         [SerializeField] private AudioSource movementAudioSource;
@@ -140,11 +140,11 @@ namespace Vampire
             spriteRenderer.flipX = lookDirection.x < 0;
 
             //Function For Gun Aim
-            AimAtGunCursor();
-            if (shootAction.triggered)
-            {
-                Shoot();
-            }
+            // AimAtGunCursor();
+            // if (shootAction.triggered)
+            // {
+            //     Shoot();
+            // }
         }
 
         protected virtual void FixedUpdate()
@@ -353,25 +353,25 @@ namespace Vampire
             // moveDirection = context.action.ReadValue<Vector2>().normalized;
         }
 
-        private void AimAtGunCursor()
-        {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());  // Get mouse position
-            Vector2 directionToMouse = (mousePosition - (Vector2)transform.position).normalized;  // Direction from character to mouse
-            float angle = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;  // Convert to degrees
-            gunTransform.rotation = Quaternion.Euler(0, 0, angle);  // Rotate the gun
-        }
-        public void Shoot()
-        {
-            if (!alive) return;
-            GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
-            Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-            bulletRb.linearVelocity = gunTransform.right * bulletSpeed;
+        // private void AimAtGunCursor()
+        // {
+        //     Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());  // Get mouse position
+        //     Vector2 directionToMouse = (mousePosition - (Vector2)transform.position).normalized;  // Direction from character to mouse
+        //     float angle = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;  // Convert to degrees
+        //     gunTransform.rotation = Quaternion.Euler(0, 0, angle);  // Rotate the gun
+        // }
+        // public void Shoot()
+        // {
+        //     if (!alive) return;
+        //     // GameObject bullet = Instantiate(bulletPrefab, gunTransform.position, gunTransform.rotation);
+        //     // Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
+        //     // bulletRb.linearVelocity = gunTransform.right * bulletSpeed;
             
-            Destroy(bullet, bulletLifetime);
-        }
-        private void OnDestroy()
-        {
-            shootAction.Disable();
-        }
+        //     // Destroy(bullet, bulletLifetime);
+        // }
+        // private void OnDestroy()
+        // {
+        //     shootAction.Disable();
+        // }
     }
 }

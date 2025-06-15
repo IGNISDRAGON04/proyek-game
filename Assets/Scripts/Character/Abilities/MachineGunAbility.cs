@@ -16,22 +16,28 @@ namespace Vampire
         {
             base.Update();
 
-            // Rotate the gun if it is reloading
-            float reloadRotation = 0;
-            float t = timeSinceLastAttack/cooldown.Value;
-            if (t > 0 && t < 1)
-            {
-                reloadRotation = t * 360;
-            }
+            // Get the mouse position in world space
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0; // Set z to 0 since we're working in 2D
 
-            float theta = Time.time*rotationSpeed.Value;
-            gunDirection = new Vector3(Mathf.Cos(theta), Mathf.Sin(theta), 0);
+            // Calculate the direction from the machine gun to the mouse position
+            gunDirection = (mousePosition - machineGun.transform.position).normalized;
+
+            // Update the gun's position and rotation
             machineGun.transform.position = playerCharacter.CenterTransform.position + gunDirection * gunRadius;
-            machineGun.transform.rotation = Quaternion.Euler(0, 0, Mathf.Rad2Deg * theta - reloadRotation);
+            float angle = Mathf.Atan2(gunDirection.y, gunDirection.x) * Mathf.Rad2Deg;
+            machineGun.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+            // Check for mouse click to launch projectile
+            if (Input.GetMouseButtonDown(0)) // Left mouse button
+            {
+                LaunchProjectile();
+            }
         }
 
         protected override void LaunchProjectile()
         {
+            base.LaunchProjectile();
             Projectile projectile = entityManager.SpawnProjectile(projectileIndex, launchTransform.position, damage.Value, knockback.Value, speed.Value, monsterLayer);
             projectile.OnHitDamageable.AddListener(playerCharacter.OnDealDamage.Invoke);
             projectile.Launch(gunDirection);
