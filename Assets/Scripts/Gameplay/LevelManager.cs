@@ -110,7 +110,13 @@ namespace Vampire
             Time.timeScale = 0;
             int coinCount = PlayerPrefs.GetInt("Coins");
             PlayerPrefs.SetInt("Coins", coinCount + statsManager.CoinsGained);
-            gameOverDialog.Open(true, statsManager);
+            // gameOverDialog.Open(true, statsManager);
+            //ending scene harusnya disini
+            SceneManager.LoadScene(2);
+        }
+        public void EndingScene()
+        {
+            
         }
 
         public void Restart()
