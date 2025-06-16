@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Final Boss
   m_EditorClassIdentifier: 
   name: Shotgun Boss
-  hp: 1
+  hp: 1000
   atk: 10
   recovery: 0
   armor: 0
