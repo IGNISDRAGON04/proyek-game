@@ -105,14 +105,21 @@ namespace Vampire
             gameOverDialog.Open(false, statsManager);
         }
 
+        private bool bossDefeated = false;
+
         public void LevelPassed(Monster finalBossKilled)
         {
+            if (bossDefeated) return;
+            bossDefeated = true;
+
             Time.timeScale = 0;
+
+            // Tambahkan coin dsb
             int coinCount = PlayerPrefs.GetInt("Coins");
             PlayerPrefs.SetInt("Coins", coinCount + statsManager.CoinsGained);
-            // gameOverDialog.Open(true, statsManager);
-            //ending scene harusnya disini
-            SceneManager.LoadScene(2);
+
+            // Load EndingDialogScene secara additive
+            SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
         }
         public void EndingScene()
         {

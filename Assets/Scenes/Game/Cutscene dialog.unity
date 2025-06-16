@@ -274,8 +274,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: -0.0000085831}
-  m_SizeDelta: {x: 1573.905, y: 250.73}
+  m_AnchoredPosition: {x: -17.548, y: -0.0000085831}
+  m_SizeDelta: {x: 1318.468, y: 250.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173644110
 MonoBehaviour:
@@ -387,14 +387,14 @@ GameObject:
   - component: {fileID: 473988111}
   - component: {fileID: 473988113}
   - component: {fileID: 473988112}
-  - component: {fileID: 473988115}
+  - component: {fileID: 473988114}
   m_Layer: 5
   m_Name: Dialogue Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &473988111
 RectTransform:
   m_ObjectHideFlags: 0
@@ -412,7 +412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 19, y: -189}
+  m_AnchoredPosition: {x: 0, y: -161}
   m_SizeDelta: {x: -186.314, y: -435.766}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473988112
@@ -453,7 +453,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473988110}
   m_CullTransparentMesh: 1
---- !u!114 &473988115
+--- !u!114 &473988114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -462,33 +462,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 473988110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96efe4cd9a3e07f46b705ea7fe690691, type: 3}
+  m_Script: {fileID: 11500000, guid: d50d621b8cbd2b641b5915697e67b33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 173644110}
+  dialogueText: {fileID: 173644110}
+  dialoguePanel: {fileID: 473988110}
+  textSpeed: 0.05
   lines:
-  - 'when the final attack was hit
-
-'
-  - 'and the monsters were all defeated....
-
-'
-  - 'the ocean will recover again
-
-'
-  - 'marine live will thrive
-
-'
-  - 'and the ocean is safe
-
-'
-  - 'thanks to the scientist
-
-'
-  - "\"for\_now.....\""
-  textSpeed: 0.04
-  backButton: {fileID: 1980405233}
-  buttonCanvasGroup: {fileID: 1980405236}
+  - hai
+  - coba lagi
+  index: 0
 --- !u!1 &774940825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,7 +1374,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 473988115}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EndingDialog, Assembly-CSharp
         m_MethodName: LoadMainMenu
         m_Mode: 1
