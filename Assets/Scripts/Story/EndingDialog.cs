@@ -59,10 +59,10 @@ public class EndingDialog : MonoBehaviour
         }
 
         // If it's the last line, show the button
-        if (index >= lines.Length - 1)
-        {
-            StartCoroutine(FadeInButton());
-        }
+        // if (index >= lines.Length - 1)
+        // {
+        //     StartCoroutine(FadeInButton());
+        // }
     }
 
     void NextLine()

@@ -1432,7 +1432,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 93e84d6bbacb2ae489caec423a8d76a5, type: 2}
   - {fileID: 11400000, guid: 02309cd829b224b648ed3c3df7c86e6c, type: 2}
   - {fileID: 11400000, guid: 09e688438479a87459d90055c0a6a2f1, type: 2}
-  - {fileID: 11400000, guid: f19e4d441e21bb6409c8553892abb514, type: 2}
   characterCardPrefab: {fileID: 979783560240380161, guid: 886cc4577ecba4fc6af0c792a1e21501, type: 3}
   coinDisplay: {fileID: 667823177}
   audioSource: {fileID: 438191656155057048}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94449d710f83429796c060423fde854, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  levelTime: 1
+  levelTime: 120
   backgroundTexture: {fileID: 2800000, guid: ffbdc5424895a5f4ca520684d561c2b3, type: 3}
   abilityPrefabs:
   - {fileID: 7378740072262091319, guid: 68faf193e4e8d451aa2229ed6155917b, type: 3}
@@ -42,9 +42,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 1b3587b35d7cb4a008d17889617a4db5, type: 2}
     - {fileID: 11400000, guid: 00d59766bcf6283499e3dc5bd0445c2a, type: 2}
     - {fileID: 11400000, guid: 0db8287edd961ff408befbd6570e6ab3, type: 2}
-  - monstersPrefab: {fileID: 8960830493049914446, guid: dfcf798c11f284752815ead20a8dbaeb, type: 3}
-    monsterBlueprints:
-    - {fileID: 11400000, guid: 38f13c65830f840f99434d21ce75baef, type: 2}
   - monstersPrefab: {fileID: 8960830493049914446, guid: b21d49c07805e4c2c8cab56371c5aad6, type: 3}
     monsterBlueprints:
     - {fileID: 11400000, guid: 0c81abe360d964c53b7e90be45a30ca5, type: 2}
@@ -205,4 +202,4 @@ MonoBehaviour:
   chestSpawnDelay: 30
   chestSpawnAmount: 5
   initialExpGemCount: 100
-  initialExpGemType: 50
+  initialExpGemType: 1

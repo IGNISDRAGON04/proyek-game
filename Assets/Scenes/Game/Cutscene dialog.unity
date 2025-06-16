@@ -469,8 +469,13 @@ MonoBehaviour:
   dialoguePanel: {fileID: 473988110}
   textSpeed: 0.05
   lines:
-  - hai
-  - coba lagi
+  - 'when the final attack was hit '
+  - and the monsters were all defeated....
+  - 'the ocean will recover again '
+  - 'marine live will thrive '
+  - and the ocean is safe
+  - 'thanks to the scientist '
+  - "\"for\_now.....\""
   index: 0
 --- !u!1 &774940825
 GameObject:
@@ -1309,7 +1314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1980405232
 RectTransform:
   m_ObjectHideFlags: 0
